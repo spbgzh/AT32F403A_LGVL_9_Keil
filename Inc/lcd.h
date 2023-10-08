@@ -52,7 +52,6 @@ void LCD_Writ_Bus(uint8_t dat); //总线发送数据
 void LCD_WR_DATA8(uint8_t dat); //写入一个字节
 void LCD_WR_DATA(uint16_t dat); //写入两个字节
 void LCD_WR_REG(uint8_t dat);   //写入一个指令
-void LCD_Delay_Ms(uint16_t ms); //简单延时
 void LCD_Address_Set(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2);//设置坐标函数
 void LCD_Fill(uint16_t xsta, uint16_t ysta, uint16_t xend, uint16_t yend, uint16_t color);
 void LCD_Init(void);//LCD初始化

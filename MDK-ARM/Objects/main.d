@@ -38,7 +38,7 @@
   ..\AT32F403A\drivers\inc\at32f403a_407_misc.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_usb.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_emac.h ..\Inc\delay.h \
-  ..\Inc\board.h ..\Inc\spi.h ..\Inc\lcd.h ..\Inc\dma.h ..\Inc\timer.h \
+  ..\Inc\spi.h ..\Inc\lcd.h ..\Inc\dma.h ..\Inc\timer.h \
   RTE\LVGL\lv_port_disp_template.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.0.0-dev\lvgl.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.0.0-dev\src\misc\lv_log.h \

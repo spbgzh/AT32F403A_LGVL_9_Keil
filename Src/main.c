@@ -11,7 +11,6 @@
 
 #include "delay.h"
 
-#include "board.h"
 #include "spi.h"
 #include "lcd.h"
 #include "timer.h"

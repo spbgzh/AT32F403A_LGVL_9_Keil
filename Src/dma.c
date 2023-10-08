@@ -33,7 +33,7 @@ void DMA1_Channel3_IRQHandler(void)
     if(dma_flag_get(DMA1_FDT3_FLAG))
     {
         dma_flag_clear(DMA1_FDT3_FLAG);
-				LCD_CS_Set();
+		LCD_CS_Set();
         lv_disp_flush_ready(disp);
     }
 }
