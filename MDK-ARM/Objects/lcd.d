@@ -1,9 +1,9 @@
 ./objects/lcd.o: ..\Src\lcd.c RTE\LVGL\lv_conf_cmsis.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   RTE\_Target_1\RTE_Components.h RTE\_Target_1\Pre_Include_Global.h \
-  ..\Inc\lcd.h ..\Inc\spi.h ..\Inc\delay.h \
+  ..\Inc\lcd.h ..\Inc\delay.h \
   ..\AT32F403A\cmsis\cm4\device_support\at32f403a_407.h \
   ..\AT32F403A\cmsis\cm4\core_support\core_cm4.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_version.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_compiler.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_armclang.h \
@@ -37,4 +37,4 @@
   ..\AT32F403A\drivers\inc\at32f403a_407_acc.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_misc.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_usb.h \
-  ..\AT32F403A\drivers\inc\at32f403a_407_emac.h ..\Inc\dma.h
+  ..\AT32F403A\drivers\inc\at32f403a_407_emac.h

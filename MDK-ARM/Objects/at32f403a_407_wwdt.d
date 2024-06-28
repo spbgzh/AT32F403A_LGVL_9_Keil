@@ -1,11 +1,11 @@
 ./objects/at32f403a_407_wwdt.o: \
   ..\AT32F403A\drivers\src\at32f403a_407_wwdt.c RTE\LVGL\lv_conf_cmsis.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   RTE\_Target_1\RTE_Components.h RTE\_Target_1\Pre_Include_Global.h \
   ..\Inc\at32f403a_407_conf.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_crm.h \
   ..\AT32F403A\cmsis\cm4\device_support\at32f403a_407.h \
   ..\AT32F403A\cmsis\cm4\core_support\core_cm4.h \
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_version.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_compiler.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_armclang.h \

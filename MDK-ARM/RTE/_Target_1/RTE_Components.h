@@ -16,10 +16,13 @@
  */
 #define CMSIS_device_header "at32f403a_407.h"
 
-/* LVGL.LVGL::LVGL:lvgl:Benchmark:9.0.0-dev */
+/* LVGL.LVGL9::LVGL:Demos:Benchmark:9.1.0 */
 /*! \brief enable demo:bencharmk */
-#define LV_USE_DEMO_BENCHMARK         1
-/* LVGL.LVGL::LVGL:lvgl:Essential:9.0.0-dev */
+#define LV_USE_DEMO_BENCHMARK           1
+/* LVGL.LVGL9::LVGL:Demos:Widgets:9.1.0 */
+/*! \brief enable demo:widgets support */
+#define LV_USE_DEMO_WIDGETS             1
+/* LVGL.LVGL9::LVGL:Essential:9.1.0 */
 /*! \brief Enable LVGL */
 #define RTE_GRAPHICS_LVGL
 
