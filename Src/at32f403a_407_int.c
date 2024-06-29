@@ -128,18 +128,20 @@ void USART1_IRQHandler(void) {
     Receiver.state = 1; // USART1接收完成标志位
 
     Receiver.len = USART_RECEVIE_LEN - dma_data_number_get(DMA1_CHANNEL5);
-
+		
+		// handle rx data
     usartdmasend(Receiver.rxbuf, Receiver.len);
+		
     Receiver.len = 0;
     Receiver.state = 0;
 
     usartdmarecv(Receiver.rxbuf, USART_RECEVIE_LEN);
   }
 }
-  /**
-   * @}
-   */
+/**
+ * @}
+ */
 
-  /**
-   * @}
-   */
+/**
+ * @}
+ */

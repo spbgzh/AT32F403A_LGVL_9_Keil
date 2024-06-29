@@ -11,24 +11,25 @@
 #include "lcd.h"
 #include "lv_port_disp_template.h"
 #include "lvgl.h"
+#include "spim.h"
+#include "stdio.h"
 #include "timer.h"
 #include "ui.h"
-#include "spim.h"
 #include "usart.h"
-#include "stdio.h"
-
+#include "usercode_to_bootloader.h"
 /**
  * @brief  main function.
  * @param  none
  * @retval none
  */
 int main(void) {
+  UserSystemInit();
   system_clock_config();
   delay_init();
   usart1_dma_init(115200);
-	spim_init();
+  spim_init();
+  
   lv_tick_timer_init();
-	
   lv_init();
   lv_port_disp_init();
   ui_init();

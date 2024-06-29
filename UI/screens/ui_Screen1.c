@@ -9,14 +9,21 @@ void ui_Screen1_screen_init(void)
 {
     ui_Screen1 = lv_obj_create(NULL);
     lv_obj_remove_flag(ui_Screen1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_bg_color(ui_Screen1, lv_color_hex(0xB200FF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_Screen1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label1 = lv_label_create(ui_Screen1);
-    lv_obj_set_width(ui_Label1, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_Label1, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_align(ui_Label1, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label1, "text");
-    lv_obj_set_style_text_font(ui_Label1, &lv_font_montserrat_24, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_Screen1Lable1 = lv_label_create(ui_Screen1);
+    lv_obj_set_width(ui_Screen1Lable1, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Screen1Lable1, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Screen1Lable1, -1);
+    lv_obj_set_y(ui_Screen1Lable1, -30);
+    lv_obj_set_align(ui_Screen1Lable1, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Screen1Lable1, "text");
+
+    ui_Screen1Lable2 = lv_label_create(ui_Screen1);
+    lv_obj_set_width(ui_Screen1Lable2, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Screen1Lable2, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Screen1Lable2, -1);
+    lv_obj_set_y(ui_Screen1Lable2, 16);
+    lv_obj_set_align(ui_Screen1Lable2, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Screen1Lable2, "text");
 
 }

@@ -34,7 +34,7 @@ PUTCHAR_PROTOTYPE {
 
 struct Receiver_Struct Receiver;
 
-void usart1_dma_init(u32 bound) {
+void usart1_dma_init(uint32_t bound) {
   gpio_init_type gpio_init_struct;
   dma_init_type dma_init_struct;
 
@@ -65,9 +65,10 @@ void usart1_dma_init(u32 bound) {
 
   dma_reset(DMA1_CHANNEL4);
   dma_default_para_init(&dma_init_struct);
-  dma_init_struct.buffer_size = 0;                          // 内存大小
-  dma_init_struct.direction = DMA_DIR_MEMORY_TO_PERIPHERAL; // 外设地址为目的地址
-  dma_init_struct.memory_base_addr = (uint32_t)0;           // 内存地址
+  dma_init_struct.buffer_size = 0; // 内存大小
+  dma_init_struct.direction =
+      DMA_DIR_MEMORY_TO_PERIPHERAL;               // 外设地址为目的地址
+  dma_init_struct.memory_base_addr = (uint32_t)0; // 内存地址
   dma_init_struct.memory_data_width =
       DMA_MEMORY_DATA_WIDTH_BYTE;           // 内存数据的宽度
   dma_init_struct.memory_inc_enable = TRUE; // 内存地址递增打开
@@ -104,7 +105,7 @@ void usart1_dma_init(u32 bound) {
   usart_enable(USART1, TRUE);                           // 使能串口
 }
 
-void usartdmasend(u8 *data, u16 len) {
+void usartdmasend(uint8_t *data, uint16_t len) {
 
   DMA1_CHANNEL4->dtcnt = len;                 // 发送的数据长度
   DMA1_CHANNEL4->maddr = (uint32_t)data;      // 数据buf地址
@@ -116,7 +117,7 @@ void usartdmasend(u8 *data, u16 len) {
   dma_channel_enable(DMA1_CHANNEL4, FALSE);    // 关闭通道4
   usart_dma_transmitter_enable(USART1, FALSE); // 关闭USART1 DMA 发送
 }
-void usartdmarecv(u8 *data, u16 len) {
+void usartdmarecv(uint8_t *data, uint16_t len) {
 
   dma_flag_clear(DMA1_FDT5_FLAG);           // 清标志
   dma_channel_enable(DMA1_CHANNEL5, FALSE); // 关闭USART1 DMA 接收

@@ -18,7 +18,14 @@ extern "C" {
 // SCREEN: ui_Screen1
 void ui_Screen1_screen_init(void);
 extern lv_obj_t * ui_Screen1;
-extern lv_obj_t * ui_Label1;
+extern lv_obj_t * ui_Screen1Lable1;
+extern lv_obj_t * ui_Screen1Lable2;
+// SCREEN: ui_Screen2
+void ui_Screen2_screen_init(void);
+extern lv_obj_t * ui_Screen2;
+// SCREEN: ui_Screen3
+void ui_Screen3_screen_init(void);
+extern lv_obj_t * ui_Screen3;
 extern lv_obj_t * ui____initial_actions0;
 
 

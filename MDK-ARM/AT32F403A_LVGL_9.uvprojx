@@ -423,6 +423,11 @@
               <FileType>1</FileType>
               <FilePath>..\Src\usart.c</FilePath>
             </File>
+            <File>
+              <FileName>usercode_to_bootloader.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\usercode_to_bootloader.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -589,14 +594,24 @@
               <FilePath>..\UI\ui_helpers.c</FilePath>
             </File>
             <File>
+              <FileName>ui_comp_hook.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UI\components\ui_comp_hook.c</FilePath>
+            </File>
+            <File>
               <FileName>ui_Screen1.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\UI\screens\ui_Screen1.c</FilePath>
             </File>
             <File>
-              <FileName>ui_comp_hook.c</FileName>
+              <FileName>ui_Screen2.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\UI\components\ui_comp_hook.c</FilePath>
+              <FilePath>..\UI\screens\ui_Screen2.c</FilePath>
+            </File>
+            <File>
+              <FileName>ui_Screen3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\UI\screens\ui_Screen3.c</FilePath>
             </File>
           </Files>
         </Group>
