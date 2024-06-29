@@ -1,6 +1,6 @@
-./objects/spi.o: ..\Src\spi.c RTE\LVGL\lv_conf_cmsis.h \
+./objects/spim.o: ..\Src\spim.c RTE\LVGL\lv_conf_cmsis.h \
   RTE\_Target_1\RTE_Components.h RTE\_Target_1\Pre_Include_Global.h \
-  ..\Inc\spi.h ..\AT32F403A\cmsis\cm4\device_support\at32f403a_407.h \
+  ..\Inc\spim.h ..\AT32F403A\cmsis\cm4\device_support\at32f403a_407.h \
   ..\AT32F403A\cmsis\cm4\core_support\core_cm4.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\AT32F403A\cmsis\cm4\core_support\cmsis_version.h \

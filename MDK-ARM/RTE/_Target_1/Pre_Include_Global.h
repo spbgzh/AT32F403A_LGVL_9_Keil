@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'template' 
+ * Project: 'AT32F403A_LVGL_9' 
  * Target:  'Target 1' 
  */
 

@@ -652,7 +652,7 @@
 
 /*API for LittleFs. */
 #if LV_USE_FS_LITTLEFS
-    #define LV_FS_LITTLEFS_LETTER '\0'     /*Set an upper cased letter on which the drive will accessible (e.g. 'A')*/
+    #define LV_FS_LITTLEFS_LETTER 'F'     /*Set an upper cased letter on which the drive will accessible (e.g. 'A')*/
 #endif
 
 /*API for Arduino LittleFs. */

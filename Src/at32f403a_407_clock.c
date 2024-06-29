@@ -34,21 +34,20 @@
 /** @addtogroup 403A_System_clock_configuration System_clock_configuration
   * @{
   */
-
 /**
   * @brief  system clock config program
   * @note   the system clock is configured as follow:
-  *         - system clock        = hext / 2 * pll_mult
-  *         - system clock source = pll (hext)
-  *         - hext                = 8000000
-  *         - sclk                = 240000000
+  *         system clock (sclk)   = hext / 2 * pll_mult
+  *         system clock source   = pll (hext)
+  *         - hext                = HEXT_VALUE
+  *         - sclk                = 180000000
   *         - ahbdiv              = 1
-  *         - ahbclk              = 240000000
+  *         - ahbclk              = 180000000
   *         - apb2div             = 2
-  *         - apb2clk             = 120000000
+  *         - apb2clk             = 90000000
   *         - apb1div             = 2
-  *         - apb1clk             = 120000000
-  *         - pll_mult            = 60
+  *         - apb1clk             = 90000000
+  *         - pll_mult            = 45
   *         - pll_range           = GT72MHZ (greater than 72 mhz)
   * @param  none
   * @retval none
@@ -66,7 +65,7 @@ void system_clock_config(void)
   }
 
   /* config pll clock resource */
-  crm_pll_config(CRM_PLL_SOURCE_HEXT_DIV, CRM_PLL_MULT_60, CRM_PLL_OUTPUT_RANGE_GT72MHZ);
+  crm_pll_config(CRM_PLL_SOURCE_HEXT_DIV, CRM_PLL_MULT_45, CRM_PLL_OUTPUT_RANGE_GT72MHZ);
 
   /* config hext division */
   crm_hext_clock_div_set(CRM_HEXT_DIV_2);
@@ -82,10 +81,10 @@ void system_clock_config(void)
   /* config ahbclk */
   crm_ahb_div_set(CRM_AHB_DIV_1);
 
-  /* config apb2clk */
+  /* config apb2clk, the maximum frequency of APB1/APB2 clock is 120 MHz */
   crm_apb2_div_set(CRM_APB2_DIV_2);
 
-  /* config apb1clk */
+  /* config apb1clk, the maximum frequency of APB1/APB2 clock is 120 MHz  */
   crm_apb1_div_set(CRM_APB1_DIV_2);
 
   /* enable auto step mode */
@@ -105,6 +104,7 @@ void system_clock_config(void)
   /* update system_core_clock global variable */
   system_core_clock_update();
 }
+
 
 /**
   * @}

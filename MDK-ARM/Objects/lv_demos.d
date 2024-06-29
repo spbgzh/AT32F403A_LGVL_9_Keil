@@ -360,8 +360,4 @@
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\stdlib\builtin\..\..\misc\lv_ll.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\stdlib\builtin\..\..\misc\lv_types.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\tick\lv_tick.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\layouts\lv_layout.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\demos\benchmark\lv_demo_benchmark.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\demos\benchmark\..\lv_demos.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\demos\widgets\lv_demo_widgets.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\demos\widgets\..\lv_demos.h
+  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\layouts\lv_layout.h

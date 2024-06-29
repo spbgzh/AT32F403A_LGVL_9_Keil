@@ -399,11 +399,6 @@
               <FilePath>..\Src\main.c</FilePath>
             </File>
             <File>
-              <FileName>delay.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\delay.c</FilePath>
-            </File>
-            <File>
               <FileName>lcd.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\lcd.c</FilePath>
@@ -412,6 +407,21 @@
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>spim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\spim.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -600,24 +610,6 @@
   <RTE>
     <apis/>
     <components>
-      <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Demos" Csub="Assets" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential">
-        <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Demos" Csub="Benchmark" Cvendor="LVGL" Cversion="9.1.0" condition="Demo-Benchmark">
-        <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Demos" Csub="Widgets" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential-Assets">
-        <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
       <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Essential" Cvendor="LVGL" Cversion="9.1.0">
         <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
         <targetInfos>
@@ -625,12 +617,6 @@
         </targetInfos>
       </component>
       <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Porting" Csub="Display" Cvariant="Generic" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential">
-        <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
-      </component>
-      <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Porting" Csub="File System" Cvariant="Generic" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential">
         <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
         <targetInfos>
           <targetInfo name="Target 1"/>
@@ -669,20 +655,16 @@
         </targetInfos>
       </file>
       <file attr="config" category="sourceC" name="examples\porting\lv_port_fs_template.c" version="2.1.0">
-        <instance index="0">RTE\LVGL\lv_port_fs_template.c</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_fs_template.c</instance>
         <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Porting" Csub="File System" Cvariant="Generic" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential" isDefaultVariant="1"/>
         <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="header" name="examples\porting\lv_port_fs_template.h" version="2.1.0">
-        <instance index="0">RTE\LVGL\lv_port_fs_template.h</instance>
+        <instance index="0" removed="1">RTE\LVGL\lv_port_fs_template.h</instance>
         <component Cbundle="LVGL9" Cclass="LVGL" Cgroup="Porting" Csub="File System" Cvariant="Generic" Cvendor="LVGL" Cversion="9.1.0" condition="LVGL-Essential" isDefaultVariant="1"/>
         <package name="lvgl" schemaVersion="1.7.31" url="https://raw.githubusercontent.com/lvgl/lvgl/master/env_support/cmsis-pack/" vendor="LVGL" version="9.1.1-dev2"/>
-        <targetInfos>
-          <targetInfo name="Target 1"/>
-        </targetInfos>
+        <targetInfos/>
       </file>
       <file attr="config" category="sourceC" name="examples\porting\lv_port_indev_template.c" version="1.0.0">
         <instance index="0" removed="1">RTE\LVGL\lv_port_indev_template.c</instance>

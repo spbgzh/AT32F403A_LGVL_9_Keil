@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 
-void System_Timer_Init(void);
-void System_Timer_Flag_Set(uint8_t flag);
-uint8_t System_Timer_Flag_Get();
+void lv_tick_timer_init(void);
+void timer_start(void);
+uint16_t timer_end(void);
 
 #endif

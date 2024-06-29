@@ -37,7 +37,7 @@
   ..\AT32F403A\drivers\inc\at32f403a_407_acc.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_misc.h \
   ..\AT32F403A\drivers\inc\at32f403a_407_usb.h \
-  ..\AT32F403A\drivers\inc\at32f403a_407_emac.h ..\Inc\timer.h \
+  ..\AT32F403A\drivers\inc\at32f403a_407_emac.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\lvgl.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\lv_version.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\lv_init.h \
@@ -394,4 +394,5 @@
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\stdlib\builtin\..\..\misc\lv_ll.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\stdlib\builtin\..\..\misc\lv_types.h \
   C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\tick\lv_tick.h \
-  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\layouts\lv_layout.h
+  C:\Users\zjjhg\AppData\Local\Arm\Packs\LVGL\lvgl\9.1.1-dev2\src\core\..\layouts\lv_layout.h \
+  ..\Inc\timer.h ..\Inc\usart.h

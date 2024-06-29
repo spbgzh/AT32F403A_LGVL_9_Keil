@@ -8,30 +8,32 @@
 ---------------------------------------*/
 
 #include "at32f403a_407_clock.h"
-
-#include "delay.h"
 #include "lcd.h"
-#include "timer.h"
 #include "lv_port_disp_template.h"
 #include "lvgl.h"
+#include "timer.h"
 #include "ui.h"
+#include "spim.h"
+#include "usart.h"
+#include "stdio.h"
+
 /**
  * @brief  main function.
  * @param  none
  * @retval none
  */
-int main(void)
-{
+int main(void) {
   system_clock_config();
   delay_init();
-	System_Timer_Init();
+  usart1_dma_init(115200);
+	spim_init();
+  lv_tick_timer_init();
 	
-	lv_init();
+  lv_init();
   lv_port_disp_init();
   ui_init();
-  while (1)
-  {
-		 lv_timer_periodic_handler();
+  while (1) {
+    lv_timer_periodic_handler();
   }
 }
 
